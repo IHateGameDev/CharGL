@@ -1,7 +1,0 @@
-CompileFlags:
-   Add:
-     - -x
-     - c
-     - -std=c23
-     - -I/home/ihgd/IHProjects/
-     - -I/usr/include
