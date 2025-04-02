@@ -90,16 +90,4 @@
 # define ON_DEBUG(action)
 #endif
 
-#ifndef API_MALLOC
-# define API_MALLOC(size) malloc(size)
-#endif
-
-#ifndef API_FREE
-# define API_FREE(ptr) free(ptr)
-#endif
-
-#ifndef API_CALLOC
-# define API_CALLOC(size) calloc(size)
-#endif
-
 #endif // !IH_SM_H
