@@ -6,7 +6,7 @@
 #include "sm.h"
 
 #ifndef CGL_POINT_SHADER
-# define CGL_POINT_SHADER(buffer, x, y, brush) buffer[x][y] = brush
+# define CGL_POINT_SHADER(buffer, x, y, brush) buffer[x*y] = brush
 #endif
 
 typedef struct {
