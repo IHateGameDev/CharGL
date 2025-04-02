@@ -5,13 +5,13 @@
 
 #include API_STDINT_H
 
-#define __CGL_VECTORS(type, sufix)      \
-  typedef type CglVector2##sufix [2];   \
-  typedef type CglVector3##sufix [3];   \
-  typedef type CglVector4##sufix [4]
+#define __CGL_VECTORS(type, sufix)                                      \
+  typedef struct { type x; type y; } CglVector2##sufix;                 \
+  typedef struct { type x; type y; type z; } CglVector3##sufix;         \
+  typedef struct { type x; type y; type z; type w; } CglVector4##sufix
 
-__CGL_VECTORS(API_UINT8, u8);
-__CGL_VECTORS(API_UINT16, u16);
-__CGL_VECTORS(API_UINT32, f);
+__CGL_VECTORS(API_U8, u8);
+__CGL_VECTORS(API_U16, u16);
+__CGL_VECTORS(float, f);
 
 #endif // !CGL_VECTOR_H

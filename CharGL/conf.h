@@ -9,50 +9,63 @@
 # define API_STDINT_H <stdint.h>
 #endif
 
-// STD TYPES REDEF
-#ifndef API_UINT8
-# define API_UINT8 uint8_t
+#ifndef API_STRING_H
+# define API_STRING_H <string.h>
 #endif
 
-#ifndef API_UINT16
-# define API_UINT16 uint16_t
+#ifndef API_STDLIB_H
+# define API_STDLIB_H <stdlib.h>
 #endif
 
-#ifndef API_UINT32
-# define API_UINT32 uint32_t
+// STD STRING FUNCTIONS
+#ifndef API_MEMSET
+# define API_MEMSET memset
 #endif
 
-#ifndef API_UINT64
-# define API_UINT64 uint64_t
+// STD TYPES
+#ifndef API_U8
+# define API_U8 uint8_t
 #endif
 
-#ifndef API_INT8
-# define API_INT8 int8_t
+#ifndef API_U16
+# define API_U16 uint16_t
 #endif
 
-#ifndef API_INT16
-# define API_INT16 int16_t
+#ifndef API_U32
+# define API_U32 uint32_t
 #endif
 
-#ifndef API_INT32
-# define API_INT32 int32_t
+#ifndef API_U64
+# define API_U64 uint64_t
 #endif
 
-#ifndef API_INT64
-# define API_INT64 int64_t
+#ifndef API_I8
+# define API_I8 int8_t
 #endif
 
-// ALLOC REDEF
+#ifndef API_I16
+# define API_I16 int16_t
+#endif
+
+#ifndef API_I32
+# define API_I32 int32_t
+#endif
+
+#ifndef API_I64
+# define API_I64 int64_t
+#endif
+
+// STDLIB FUNCTIONS
 #ifndef API_MALLOC
-# define API_MALLOC(size) malloc(size)
+# define API_MALLOC malloc
 #endif
 
 #ifndef API_FREE
-# define API_FREE(ptr) free(ptr)
+# define API_FREE free
 #endif
 
 #ifndef API_CALLOC
-# define API_CALLOC(size) calloc(size)
+# define API_CALLOC calloc
 #endif
 
 #endif // !IH_CONF_H
